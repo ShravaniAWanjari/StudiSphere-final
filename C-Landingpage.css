@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Broken'; /* Name of the font family */
+  src: url('path/to/Broken.otf') format('opentype'), /* For .otf format */
+       url('path/to/Broken.ttf') format('truetype'); /* For .ttf format */
+  /* Add more src lines if you have other formats */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Rectangle-20 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+}
+
+.Rectangle-20 img {
+  margin: 0;
+}
+
+.Rectangle-20::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.86) ;
+}
+
+.Rectangle-20 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Background {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 340px;
+  height: 40px;
+  margin: 0;
+  padding: 31px 17px;
+  box-shadow: 0 4px 4px 0 rgba(114, 73, 168, 0.85);
+  background-color: #1a122d;
+  z-index: 2;
+  border-radius: 10px 10px 55px 55px;
+}
+
+.StudiSphere {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  width: 80%;
+  height: 40%;
+  font-family: Courier, monospace;
+  font-size: 50px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #c693f8;
+  z-index: 3;
+}
+
+.typing-line {
+  position: absolute;
+  top: 150px;
+  left: 22px;
+  font-family: Courier New, monospace;
+  font-weight: normal;
+  font-size: 60px;
+  color: #fff;
+  opacity: 1;
+  z-index: 3;
+  text-align: left;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.LPh2 {
+  padding-top: 5%;
+  position: absolute;
+  top: 250px;
+  left: 22px;
+  font-family: Courier New, monospace;
+  font-weight: normal;
+  font-size: 20px;
+  color: #c693f8;
+  opacity: 1;
+  z-index: 1;
+}
+
+.purple-button {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #221132; /* Purple color */
+  color: #ffcc00; /* Yellow text color */
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Courier, monospace;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.1s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0; /* Initially hide the button */
+  visibility: hidden;
+}
+
+.purple-button:hover {
+  background-color: #221132; /* Darker purple on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect on hover */
+}
+
+.button-text {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.scrolldown {
+  position: absolute;
+  
+  left: 50% ;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1%;
+  
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100% ;
+  height: 100%;
+  border-bottom: 2px solid #e7b4ff;border-right: 2px solid #e7b4ff;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+  border-radius: 5% ;
+}
+
+.scrolldown span:nth-child(1){
+  transform: translate(-15px,-15px);
+  animation-delay:  -0.4s;
+}
+.scrolldown span:nth-child(2){
+  transform: translate(0px,0px);
+  animation-delay:  -0.2s;
+}
+.scrolldown span:nth-child(3){
+  transform: translate(15px,15px);
+  animation-delay:  0s;
+}
+
+

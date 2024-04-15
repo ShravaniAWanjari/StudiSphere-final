@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My StudyRoom</title>
+    <link rel="stylesheet" href="room.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="StudiSphere">StudiSphere</div>
+    </div>
+    <div class="backgrounds">
+        <img class="bg" src="images/background-image.jpg" alt="background image of a study room">
+    </div>
+
+    <div class="show-todo-btn" onclick="showTodoPopup()" title="To Do Lists"><img class="todobtn" src="images\icons8-todo-list-90.png" alt=""></div>
+
+    <div class="todo-popup" id="todoPopup">
+        <div class="todo-popup-content">
+            <span class="close-popup" onclick="closeTodoPopup()">&times;</span>
+            <div class="todolist">
+                <h2><img class="checklist-icon" src="images/to-do-list-26-512.png" alt="to do list feature icon">To Do List</h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Create a new task">
+                    <button class="createtaskbutton" onclick="addTask()">Create</button>
+                </div>
+                <div class="todolist-container">
+                    <ul id="list-container">
+                        <!-- List items will be here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="room.js"></script>
+</body>
+</html>

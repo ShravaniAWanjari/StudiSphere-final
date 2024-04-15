@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneak Peek</title>
+    <style>
+     body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url("sneakimage.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.86);
+    z-index: 1;
+}
+
+h3 {
+    position: relative;
+    z-index: 2;
+    font-family: Courier, monospace;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    margin: 20px 0; /* Space around images */
+    display: block; /* Ensure images are displayed as blocks */
+}
+
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+    <h3 style="font-family: Courier, monospace; color: white; font-size: 50px;">The Main Room </h3> <br><br>
+</body>
+</html>

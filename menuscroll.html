@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="C-menu.css">
+</head>
+<body>
+  <!-- Background Image -->
+  <img class="background" src="bgimageLP.jpg" alt="Background Image">
+
+  <!-- Black Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Menu -->
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sneak-peek.html">Sneak Peek</a></li>
+    <li><a href="Loginpage.html">Sign Up</a></li>
+    <div class="cursor"></div>
+  </ul>
+
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.pageX + 'px';
+      cursor.style.top = e.pageY + 'px';
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const body = document.querySelector('body');
+      body.style.transition = 'opacity 1.5s ease-in-out'; // Adjust the duration as needed
+      body.style.opacity = '1';});
+
+  </script>
+</body>
+</html>
